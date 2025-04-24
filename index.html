@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transit-it-Easy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">  
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png">
+
+</head>
+<body>
+     <header class="navbar navbar-expand-lg navbar-dark bg-gradient">
+        <a class="navbar-brand animated-logo" href="#">Transit-it-Easy</a>
+        <span class="slogan">"Your Journey, Our Priority"</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item position-relative">
+                    <button class="btn btn-link nav-link" id="homeBtn">Home</button>
+                    <div id="homeTooltip" class="tooltip-box">Plan your journey with ease!</div>
+                </li>
+                <li class="nav-item position-relative">
+                    <button class="btn btn-link nav-link" id="aboutBtn">About Us</button>
+                    <div id="aboutTooltip" class="tooltip-box">Real-time schedules for a smooth ride.</div>
+                </li>
+                <li class="nav-item position-relative">
+                    <button class="btn btn-link nav-link" id="MissionBtn">Mission</button>
+                    <div id="MissionTooltip" class="tooltip-box">Our mission is to simplify urban travel by providing accurate and up-to-date bus route information, encouraging the use of public transport and making the journey easier for everyone.</div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="container mt-5 pt-5 text-center">
+        <!-- Home Content -->
+         <section class="welcome">
+            <h1>Welcome to <span class="highlight">Transit-it-Easy</span></h1>
+            <p class="subtitle">Your ultimate bus route planner. Get real-time schedules, find the best routes, and travel hassle-free.</p>
+            <div class="welcome-box">
+                <p>🚌 <strong>Transit-it-Easy</strong> is your all-in-one travel companion. Plan journeys confidently, explore real-time schedules, find the fastest routes, and enjoy stress-free travel.</p>
+                <p>Whether you're commuting or exploring, Transit-it-Easy makes your trip smarter and simpler.</p>
+            </div>
+        
+           
+        </section>
+       
+        <div class="how-it-works">
+            <h2>🧭 How It Works</h2>
+            <ul>
+                <li><strong>Enter</strong> your <em>Starting Point</em> and <em>Destination</em>.</li>
+                <li><strong>Click</strong> on <span class="highlight">Find Route</span> to see buses and timings.</li>
+                <li><strong>Get redirected</strong> to <em>Google Maps</em> for navigation.</li>
+            </ul>
+        </div>
+          
+        </section>
+          <!-- Search Section -->
+        <section>
+            <div class="border">
+                <!-- Start Point -->
+                <div>
+                    <div class="form-group"><label for="start">Starting Point/கிளம்பும் இடம்:</label>
+                        <input list="locations" id="start" name="start" placeholder="Type or select a location">
+                        
+                        <datalist id="locations">
+                          <option value="Erode bus Stand">
+                        </datalist>
+                    </div>
+                </div>
+    
+                <!-- Destination -->
+                <div>
+                    <div class="form-group">
+                        <label for="destination">Destination/இறங்கும் இடம்:</label>
+                        <input type="destination" id="destination" name="destination" list="destinations" placeholder="Type or Enter destination">
+                        
+                        <datalist id="destinations">
+                          <option value="Saveetha Traffic Signal, 8PR9+5J7, Nachiappa Rd, Chidambaram Colony, Erode, Tamil Nadu 638001">
+                          <option value="P.S.Park Bus stand, 10, Main Road, Surampattivalasu, Marapalam, Erode, Tamil Nadu 638001">
+                          <option value="Erode Fire Service, 8PMG+2VV, Gandhiji Road, Periyar Nagar Rd, Periyar Nagar, Erode, Tamil Nadu 638001">
+                          <option value="Bullfight Statue, 8PJG+9X2, Kalaimaadu Silai Roundana, Periyar Nagar, Erode, Tamil Nadu 638001">
+                          <option value="Lotus Hospital, Housing Unit, Nadarmedu, Erode, Tamil Nadu 638002">
+                        </datalist>
+                        
+                    </div>
+                <!-- Search Button -->
+                <div>
+                    <button id="searchBtn">
+                        Find Route
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Search Results -->
+        <section id="results" class="mb-2"></section>
+        <section id="key-features" class="mt-2"> <!-- instead of mt-5 -->
+        <h3>Key Features</h3><br>
+        <ul>
+            <li><strong>Real-Time Bus Schedules:</strong> Stay updated with live arrival and departure times.</li> <br>
+            <li><strong>Route Suggestions:</strong> Get the fastest and most efficient bus routes between two points.</li><br>
+            <li><strong>Location-Based Search:</strong> Use your current location to find nearby bus stops and options.</li><br>
+            <li><strong>Google Maps Integration:</strong> Visualize your route directly on the map and get step-by-step directions.</li><br>
+            <li><strong>User-Friendly Interface:</strong> Clean design to plan trips quickly without confusion.</li><br>
+        </ul>
+    </section>
+    </main>
+    <footer class="bg-gradient text-white text-center py-3">
+        <h3>Our Services</h3>
+        <p>Providing accurate and up-to-date bus information to make your travel convenient.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('#homeBtn').hover(function() {
+                $('#homeTooltip').fadeIn();
+            }, function() {
+                $('#homeTooltip').fadeOut();
+            });
+            $('#aboutBtn').hover(function() {
+                $('#aboutTooltip').fadeIn();
+            }, function() {
+                $('#aboutTooltip').fadeOut();
+            });
+        });
+    </script>
+</body>
+</html>
