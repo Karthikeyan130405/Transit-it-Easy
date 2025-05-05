@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Transit-it-Easy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">Transit-<span>it-Easy</span></div>
+      <nav>
+        <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <h3><span>About</span> <span>Us</span></h3>
+    <p>
+      Transit-it-Easy is a smart bus scheduling tool designed to help commuters
+      find optimal bus routes and timings easily. We are dedicated to improving
+      urban travel through intelligent, accessible, and user-friendly tools.
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="col">
+        <h5>Contact Us</h5>
+        <p>Email: support@transititeasy.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+      <div class="col">
+        <h5>Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <p style="text-align:center;">&copy; 2025 Transit-it-Easy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
