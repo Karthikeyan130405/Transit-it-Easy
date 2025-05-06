@@ -23,8 +23,6 @@
     background: #fffef1;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
     padding: 20px 0;
-    position: sticky;
-    top: 0;
     z-index: 100;
   }
   
@@ -36,7 +34,7 @@
   .logo {
     font-size: 1.6rem;
     font-weight: 800;
-    color: #1a1a1a;
+    color: #1a1a1a; 
   }
   
   .logo span {
@@ -61,81 +59,63 @@
   }
   
   /* === CONTENT SECTION === */
-  .content-section {
-    text-align: center;
-    padding: 80px 20px;
+  .about-section {
+    width: 100%;
+    padding: 80px 5%;
+    background: linear-gradient(to right, #fff8e1, #fff3e0);
+    font-family: 'Merriweather', serif;
+    color: #333;
   }
   
-  .content-section h3 {
-    font-size: 36px;
-    font-weight: bold;
+  .about-content {
+    width: 100%;
+    padding: 0 5%;
+  }
+  
+  .about-content h2 {
+    font-size: 2.8em;
+    color: #e65100;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: left;
+    border-left: 8px solid #ff5722;
+    padding-left: 18px;
+    font-weight: 700;
+  }
+  
+  .about-content p {
+    font-size: 1.5em;
+    line-height: 2.2;
     margin-bottom: 30px;
+    text-align: justify;
   }
   
-  .content-section h3 span {
-    font-size: 48px;
+  .about-content strong {
+    color: #d84315;
+    font-weight: 700;
+    background-color: #ffe0b2;
+    padding: 2px 6px;
+    border-radius: 4px;
   }
   
-  .content-section h3 span:nth-child(1) {
-    color: #1a1a1a;
+  .about-content em {
+    font-style: normal;
+    font-weight: 700;
+    color: #bf360c;
+    background-color: #ffccbc;
+    padding: 2px 6px;
+    border-radius: 4px;
   }
-  
-  .content-section h3 span:nth-child(2) {
-    color: #ff6f0f;
-  }
-  
-  /* === 3D ENHANCED PARAGRAPH === */
-  /* === CLEAN, LARGE PARAGRAPH === */
-.content-section p {
-  font-family: 'Roboto', sans-serif; /* Elegant modern font */
-  font-size: 2.2rem; /* Increased font size */
-  color: #333;
-  max-width: 1000px;
-  margin: 0 auto;
-  line-height: 2;
-  text-align: center;
-  padding: 20px;
-  background: none; /* Removed background */
-  border-radius: 0; /* Removed rounded corners */
-  box-shadow: none; /* Removed shadows */
-  transform: none;
-  transition: none;
-  font-weight: 400;
-  letter-spacing: 0.6px;
-  word-wrap: break-word;
-  position: relative;
-  z-index: 1;
-  overflow: visible;
-}
-
-.content-section p:hover {
-  transform: none;
-  box-shadow: none;
-  background: none;
-}
-
-.content-section p::before {
-  display: none; /* Completely remove the shine effect */
-}
-
-  
-  @keyframes shine {
-    0% {
-      transform: rotate(30deg) translate(-100%, -100%);
-      opacity: 0.2;
-    }
-    50% {
-      transform: rotate(30deg) translate(50%, 50%);
-      opacity: 0.3;
-    }
-    100% {
-      transform: rotate(30deg) translate(150%, 150%);
-      opacity: 0.1;
-    }
-  }
-  
-  
-  
+  .disclaimer {
+    font-size: 1.1em;
+    color: #9e9e9e;
+    font-style: italic;
+    margin-top: 20px;
+    border-left: 4px solid #ffcc80;
+    padding-left: 15px;
+    background-color: #fff8e1;
+    border-radius: 6px;
+  }  
   /* === FOOTER === */
   .site-footer {
     background-color: #1a1a1a;
