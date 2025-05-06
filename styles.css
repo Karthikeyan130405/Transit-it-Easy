@@ -1,0 +1,302 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1A1F2B; /* Replacing black with Gunmetal Blue */
+    color: #EAEAEA;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header.bg-gradient {
+    background: linear-gradient(135deg, #2C3E50, #4CA1AF); /* Dark Blue to Ocean Teal */
+    background-size: 600% 600%;
+    animation: gradientTransition 10s ease infinite;
+    color: white;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* Smooth Gradient Animation */
+@keyframes gradientTransition {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.animated-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.animated-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Buttons */
+.navbar .nav-link {
+    background: #252A36; /* Deep Slate */
+    border-radius: 40px;
+    color: #EAEAEA !important;
+    padding: 10px 18px;
+    margin: 0 10px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background 0.4s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    background: linear-gradient(135deg, #00BFA6, #64DD17);
+    color: #1C1C1C !important;
+    transform: translateY(-2px);
+}
+
+/* Tooltip Box */
+.tooltip-box {
+    background: #20232A;
+    color: #F0F0F0;
+    padding: 20px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    white-space: normal;
+    text-align: left;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 220px;
+    z-index: 1000;
+}
+
+.tooltip-box::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #20232A transparent;
+}
+
+.nav-item:hover .tooltip-box {
+    opacity: 1;
+}
+
+/* Footer Styling */
+footer.bg-gradient {
+    background: linear-gradient(135deg, #2C3E50, #4CA1AF); /* Same as header for unity */
+    background-size: 600% 600%;
+    animation: gradientTransition 10s ease infinite;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Slogan */
+.slogan {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    color: #F3F3F3;
+}
+
+/* Navigate Button */
+.navigate-btn {
+    background: #252A36;
+    border-radius: 40px;
+    color: #E0E0E0;
+    padding: 10px 18px;
+    margin-top: 10px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background 0.4s ease, transform 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.navigate-btn:hover {
+    background: linear-gradient(135deg, #00E676, #00B8D4);
+    transform: translateY(-2px);
+    color: #1C1C1C;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Labels */
+.form-group label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #EAEAEA;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 3px solid #00E676;
+    border-radius: 8px;
+    outline: none;
+    background-color: #1B1035; /* Midnight Purple */
+    color: #E0E0E0;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #D500F9;
+    box-shadow: 0 0 8px rgba(213, 0, 249, 0.6);
+}
+
+/* Search Button */
+#searchBtn {
+    width: 100%;
+    background-color: #00BFA6;
+    color: #1C1C1C;
+    padding: 12px;
+    font-size: 18px;
+    border: 3px solid #1DE9B6;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+#searchBtn:hover {
+    background-color: #64DD17;
+    border-color: #00C853;
+    color: #1C1C1C;
+}
+
+/* Border Utility */
+.border {
+    border-radius: 20px;
+    color: #f3f3f3;
+    padding: 25px;
+}
+
+/* Logo Icon */
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Key Features Section */
+.key-features {
+    margin-top: 20px !important;
+    padding-top: 10px;
+}
+
+/* Results Section */
+#results {
+    padding: 20px;
+}
+
+#results > div {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #1A1F2B; /* Matching with body for cohesion */
+    border-radius: 10px;
+    border: 1px solid #3F3F5F;
+}
+/* Welcome Section Styling */
+.welcome {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+    color: #f1f1f1;
+    animation: fadeIn 1s ease-in;
+}
+
+.welcome h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.highlight {
+    color: #4a9eff;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.welcome-box {
+    background: linear-gradient(to right, #1f1c2c, #302b63);
+    border-radius: 16px;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.how-it-works h2 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.how-it-works ul {
+    list-style: disc;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px;
+    color: #ddd;
+}
+
+.how-it-works li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+#results {
+    margin-bottom: 0.5rem !important; /* Reduce space below results */
+  }
+  
+  #key-features {
+    margin-top: 0rem !important; /* Remove extra space before this section */
+  }
+  
