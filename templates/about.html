@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Transit-it-Easy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">Transit-<span>it-Easy</span></div>
+      <nav>
+        <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="about-content">
+    <h2>About Transit-it-Easy</h2>
+    <p>
+      <strong>Transit-it-Easy</strong> is a smart bus scheduling solution designed to simplify urban commuting by helping users quickly find optimal bus routes and timings. Our goal is to enhance everyday travel through intelligent, accessible, and user-friendly tools tailored for the modern commuter.
+    </p>
+    <p>
+      Currently, <strong>Transit-it-Easy</strong> is available exclusively in <em>Erode</em>, serving as a pilot project to demonstrate its capabilities. The route data and schedules presented are based on a limited set of real-world samples collected directly by the developers to showcase the system's potential.
+    </p>
+    <p>
+      As we continue to refine and expand the platform, user feedback and real-time data will be crucial in shaping its future.
+    </p>
+    <p class="disclaimer">
+      <em>Disclaimer:</em> The schedule data presented is for demonstration purposes only and may not reflect actual bus timings. Please do not rely on this information for real-time travel planning.
+    </p>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="col">
+        <h5>Contact Us</h5>
+        <p>Email: transititeasy.com</p>
+        <p>Phone: +91-6381183740</p>
+      </div>
+      <div class="col">
+        <h5>Links</h5>
+        <ul class="footer-links">
+          <li><a href="{{ url_for('home') }}">Home</a></li>          
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <p style="text-align:center;">&copy; 2025 Transit-it-Easy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

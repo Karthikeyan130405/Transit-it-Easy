@@ -1,0 +1,74 @@
+[
+    {
+        "bus_name": "Bus-name:Govt-bs-26a",
+        "start": "Erode bus Stand",
+        "destination": "Saveetha Traffic Signal, 8PR9+5J7, Nachiappa Rd, Chidambaram Colony, Erode, Tamil Nadu 63801",
+        "time": "08:45 AM"
+    },
+    {
+        "bus_name": "Bus-name:Govt-bs-26a",
+        "start": "Erode bus Stand",
+        "destination": "P.S.Park Bus stand, 10, Main Road, Surampattivalasu, Marapalam, Erode, Tamil Nadu 638001",
+        "time": "08:30 AM"
+    },
+    {
+        "bus_name": "Bus-name:Govt-bs-26a",
+        "start": "Erode bus Stand",
+        "destination": "Erode Fire Service, 8PMG+2VV, Gandhiji Road, Periyar Nagar Rd, Periyar Nagar, Erode, Tamil Nadu 638001",
+        "time": "08:30 AM"
+    },
+    {
+        "bus_name": "Bus-name:Govt-bs-26a",
+        "start": "Erode bus Stand",
+        "destination": "Bullfight Statue, 8PJG+9X2, Kalaimaadu Silai Roundana, Periyar Nagar, Erode, Tamil Nadu 638001",
+        "time": "08:30 AM"
+    },
+    {
+        "bus_name": "Bus-name:Govt-bs-26a",
+        "start": "Erode bus Stand",
+        "destination": "Lotus Hospital, Housing Unit, Nadarmedu, Erode, Tamil Nadu 638002",
+        "time": "08:30 AM"
+    },
+    {
+        "bus_name": "Bus-name:Govt-bus-26A",
+        "start": "Erode bus Stand",
+        "destination": "Annamar bunk",
+        "time": "08:30 AM"
+    },
+    {
+        "bus_name": "Bus-name:RPP-14A",
+        "start": "Erode bus Stand",
+        "destination": "Saveetha Traffic Signal, 8PR9+5J7, Nachiappa Rd, Chidambaram Colony, Erode, Tamil Nadu 638001",
+        "time": "08:45 AM"
+    },
+    {
+        "bus_name": "Bus-name:RPP-14A",
+        "start": "Erode bus Stand",
+        "destination": "P.S.Park Bus stand, 10, Main Road, Surampattivalasu, Marapalam, Erode, Tamil Nadu 638001",
+        "time": "08:30 AM"
+    },
+    {
+        "bus_name": "Bus-name:RPP-14A",
+        "start": "Erode bus Stand",
+        "destination": "Erode Fire Service, 8PMG+2VV, Gandhiji Road, Periyar Nagar Rd, Periyar Nagar, Erode, Tamil Nadu 638001",
+        "time": "08:30 AM"
+    },
+    {
+        "bus_name": "Bus-name:RPP-14A",
+        "start": "Erode bus Stand",
+        "destination": "Bullfight Statue, 8PJG+9X2, Kalaimaadu Silai Roundana, Periyar Nagar, Erode, Tamil Nadu 638001",
+        "time": "08:30 AM"
+    },
+    {
+        "bus_name": "Bus-name:RPP-14A",
+        "start": "Erode bus Stand",
+        "destination": "Annamar bunk",
+        "time": "08:30 AM"
+    },
+    {
+        "bus_name": "Bus-name:RPP-14A",
+        "start": "Erode bus Stand",
+        "destination": "Lotus Hospital, Housing Unit, Nadarmedu, Erode, Tamil Nadu 638002",
+        "time": "08:30 AM"
+    }
+]

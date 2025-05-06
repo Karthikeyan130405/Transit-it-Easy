@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transit-it-Easy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">Transit-<span>it-Easy</span></div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <a href="{{ url_for('about') }}">About Us</a>          
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="content-section">
+        <h3><span style="color: #1a1a1a;">Find Your</span> <span style="color: #ff6f0f;">Perfect Route</span></h3>
+        <p>Get real-time bus information and directions between any two points in the city.</p>
+      </div>
+      <section class="search mt-3 text-center">
+        <h2>Find Your Bus Route</h2>
+      
+        <div class="form-group">
+          <input list="start-options" type="text" class="form-control mx-auto" id="start" name="start" placeholder="Enter starting point">
+          <datalist id="start-options">
+            <option value="Erode bus Stand">
+          </datalist>
+        </div>
+      
+        <div class="form-group">
+          <input list="end-options" type="text" class="form-control mx-auto" id="destination" name="destination" placeholder="Enter destination">
+          <datalist id="end-options">
+            <option value="Saveetha Traffic Signal, 8PR9+5J7, Nachiappa Rd, Chidambaram Colony, Erode, Tamil Nadu 63801">
+            <option value="P.S.Park Bus stand, 10, Main Road, Surampattivalasu, Marapalam, Erode, Tamil Nadu 638001">
+            <option value="Erode Fire Service, 8PMG+2VV, Gandhiji Road, Periyar Nagar Rd, Periyar Nagar, Erode, Tamil Nadu 638001">
+            <option value="Bullfight Statue, 8PJG+9X2, Kalaimaadu Silai Roundana, Periyar Nagar, Erode, Tamil Nadu 638001">
+            <option value="Lotus Hospital, Housing Unit, Nadarmedu, Erode, Tamil Nadu 638002">
+          </datalist>
+        </div>
+      
+        <button class="btn btn-primary" id="searchBtn">Search</button>
+      </section>
+      
+      <!-- 🔽 Add this below the search section -->
+     <!-- ✅ Combined and Correct -->
+<div id="results" class="results-section container mt-4"></div>
+
+        <!-- Dynamic bus results go here -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container row">
+      <div class="col">
+        <h5>Transit-it-Easy</h5>
+        <p>Navigate your city with ease using our real-time bus search platform.</p>
+      </div>
+      <div class="col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h5>Contact Us</h5>
+        <ul class="footer-links">
+          <li><i class="fas fa-envelope"></i> transititeasy.com</li>
+          <li><i class="fas fa-phone"></i> +91-6381183740</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <p class="mt-3" style="text-align: center;">&copy; 2025 Transit-it-Easy. All rights reserved.</p>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</html>

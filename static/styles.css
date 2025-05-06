@@ -1,0 +1,358 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fffef1; /* Soft ivory */
+  color: #333;
+}
+
+/* Container Utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.main-header {
+  background: #fffef1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  padding: 20px 0;
+  z-index: 100;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.content-section h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content-section h3 span {
+  font-size: 48px;  /* Enlarge the span elements */
+}
+
+.content-section h3 span:nth-child(1) {
+  color: #1a1a1a;  /* Dark color for the first span */
+}
+
+.content-section h3 span:nth-child(2) {
+  color: #ff6f0f;  /* Vibrant orange color for the second span */
+}
+
+.content-section p {
+  font-size: 22px;
+  color: #333;
+  margin-top: 10px;
+}
+
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.logo span {
+  color: #ff6f0f;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff6f0f;
+}
+
+/* Hero Section */
+main {
+  padding: 100px 0 40px;
+  text-align: center;
+  background: linear-gradient(to bottom, #fffef1 0%, #fff9e7 100%);
+}
+
+main h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+main h1 span {
+  color: #ff6f0f;
+}
+
+main p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+/* Search Section */
+/* 🔍 Search Section Styling */
+.search {
+  background-color: #fffef1; /* Match body background */
+  padding: 50px 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+/* 🔠 Heading */
+/* 🔍 Search Section Container */
+.search {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 50px 30px;
+  max-width: 550px;
+  margin: 50px auto;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+/* 🏷️ Heading Style */
+.search h2 {
+  font-size: 2.2rem;
+  margin-bottom: 35px;
+  color: #1a1a1a;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* 🔲 Input Fields */
+.search .form-group {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🧊 Styled Input */
+.search input.form-control {
+  width: 100%;
+  max-width: 420px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.search input.form-control:focus {
+  border-color: #ff6f0f;
+  outline: none;
+  box-shadow: 0 0 12px rgba(255, 111, 15, 0.2);
+  transform: scale(1.02);
+}
+
+/* 🔘 Modern Button Style */
+#searchBtn {
+  padding: 14px 30px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(to right, #ff6f0f, #ff914d);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(255, 111, 15, 0.2);
+  transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#searchBtn:hover {
+  background: linear-gradient(to right, #e55b00, #ff7300);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(229, 91, 0, 0.3);
+}
+
+/* 📱 Responsive */
+@media (max-width: 576px) {
+  .search input.form-control {
+    width: 100%;
+  }
+
+  .search {
+    padding: 40px 20px;
+  }
+}
+
+
+/* Footer */
+.site-footer {
+  background-color: #1a1a1a; /* Dark background color */
+  color: white;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.site-footer h5 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.site-footer p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.site-footer .footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.site-footer .footer-links li {
+  margin-bottom: 10px;
+}
+
+.site-footer .footer-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.site-footer .footer-links li a:hover {
+  color: #ff6f0f; /* Hover color for links */
+}
+
+.site-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.site-footer .col {
+  flex: 1;
+  padding: 10px;
+}
+
+.site-footer .col i {
+  margin-right: 10px;
+}
+
+.footer-divider {
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 30px 0;
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .site-footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-footer .col {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-divider {
+    margin: 20px 0;
+  }
+}
+/* 🟨 Results Section Container */
+.results-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fffef1;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🚌 Bus Result Card */
+.bus-card {
+  background: #ffffff;
+  border-left: 6px solid #ff6f0f;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.bus-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🚍 Bus Info */
+.bus-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.bus-card p {
+  font-size: 1rem;
+  color: #444;
+  margin: 5px 0;
+}
+
+/* 🧭 Navigate Button */
+.navigate-btn {
+  margin-top: 15px;
+  padding: 10px 22px;
+  background-color: #ff6f0f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navigate-btn:hover {
+  background-color: #e55b00;
+  transform: scale(1.05);
+}
+
+/* ❗ Error Message */
+.error-message {
+  text-align: center;
+  color: #e53935;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #ffeaea;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.05);
+}
