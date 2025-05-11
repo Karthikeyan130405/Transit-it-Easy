@@ -36,6 +36,24 @@
         "time": "08:30 AM"
     },
     {
+        "bus_name": "Bus-name:Govt-bs-26a",
+        "start": "Erode bus Stand",
+        "destination": "Telephone Nagar Bus Stop, SH 83A, Chettipalayam, Erode, Tamil Nadu 638002",
+        "time": "07.35 PM"
+    },
+    {
+        "bus_name": "Bus-name:Govt-bs-26a",
+        "start": "Erode bus Stand",
+        "destination": "CS Sengotaiya Thirumana Mandapam, 8P5G+H9W, 126, Erode-Dharapuram Rd, State Bank Nagar, Chettipalayam, Erode, Tamil Nadu 638002",
+        "time": "07.35 PM"
+    },
+    {
+        "bus_name": "Bus-name:Govt-bs-26a",
+        "start": "Erode bus Stand",
+        "destination": "Jaycees School Bus Stop, SH 83A, Chettipalayam, Erode, Tamil Nadu 638002",
+        "time": "07.35 PM"
+    },
+    {
         "bus_name": "Bus-name:RPP-14A",
         "start": "Erode bus Stand",
         "destination": "Saveetha Traffic Signal, 8PR9+5J7, Nachiappa Rd, Chidambaram Colony, Erode, Tamil Nadu 638001",
@@ -70,5 +88,22 @@
         "start": "Erode bus Stand",
         "destination": "Lotus Hospital, Housing Unit, Nadarmedu, Erode, Tamil Nadu 638002",
         "time": "08:30 AM"
+    },
+    {
+        "bus_name": "Bus-name:RPP-14A",
+        "start": "Erode bus Stand",
+        "destination": "Telephone Nagar Bus Stop, SH 83A, Chettipalayam, Erode, Tamil Nadu 638002",
+        "time": "07.35 PM"
+    },
+    {
+        "bus_name": "Bus-name:RPP-14A",
+        "start": "Erode bus Stand",
+        "destination": "CS Sengotaiya Thirumana Mandapam, 8P5G+H9W, 126, Erode-Dharapuram Rd, State Bank Nagar, Chettipalayam, Erode, Tamil Nadu 638002",
+        "time": "07.35 PM"
+    }, {
+        "bus_name": "Bus-name:RPP-14A",
+        "start": "Erode bus Stand",
+        "destination": "Jaycees School Bus Stop, SH 83A, Chettipalayam, Erode, Tamil Nadu 638002",
+        "time": "07.35 PM"
     }
 ]
